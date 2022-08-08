@@ -15,21 +15,22 @@
             <img src="" alt="">
         </div>
         <div class="box">
+            <!-- <input type="text" id="coolor"> -->
             <div class="action">
-                <div class="color" onclick="menuToggle();"></div>
+                <div class="color" id="color" onclick="menuToggle();"></div>
                 <div class="menu">
                     <h3>กรุณาเลือกสี</h3>
                     <ul>
-                        <li><a href="#">Black</a></li>
-                        <li><a href="#">Brown</a></li>
-                        <li><a href="#">Red</a></li>
-                        <li><a href="#">Orange</a></li>
-                        <li><a href="#">Yellow</a></li>
-                        <li><a href="#">Green</a></li>
-                        <li><a href="#">Blue</a></li>
-                        <li><a href="#">Purple</a></li>
-                        <li><a href="#">Gray</a></li>
-                        <li><a href="#">White</a></li>
+                        <li><a><button style="background-color: Black;" onclick="color('Black').value">Black</button></a></li>
+                        <li><a><button onclick="color('Brown').value">Brown</button></a></li>
+                        <li><a><button onclick="color('Red').value">Red</button></a></li>
+                        <li><a><button onclick="color('Orange').value">Orange</button></a></li>
+                        <li><a><button onclick="color('Yellow').value">Yellow</button></a></li>
+                        <li><a><button onclick="color('Green').value">Green</button></a></li>
+                        <li><a><button onclick="color('Blue').value">Blue</button></a></li>
+                        <li><a><button onclick="color('Purple').value">Purple</button></a></li>
+                        <li><a><button onclick="color('Gray').value">Gray</button></a></li>
+                        <li><a><button onclick="color('White').value">White</button></a></li>
                     </ul>
                 </div>
             </div>
