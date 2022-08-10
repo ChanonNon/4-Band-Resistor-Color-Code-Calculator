@@ -14,6 +14,7 @@
         <div class="img">
             <!-- <img src="" alt=""> -->
             <div class="body_1"></div>
+            <div class="line"></div>
             <div class="square_1"></div>
             <div class="square_2"></div>
             <div class="triangle_1"></div>
@@ -26,112 +27,46 @@
             <div class="line_3" id="line_3"></div>
             <div class="line_4" id="line_4"></div>
         </div>
+        <div class="result" id="result">
+            <a>ค่าตัวต้านทาน: </a>
+            <p id="result_resistor"></p>
+        </div>
         <div class="box">
-            <!-- <input type="text" id="coolor"> -->
             <div class="action">
-                <div class="color_1" id="color_1" onclick="menuToggle();"></div>
+                <div class="color_1" id="color_1"></div>
                 <div class="color_2" id="color_2"></div>
-                <div class="color_3" id="color_3" onclick="menuToggle_2();"></div>
-                <!-- <div class="menu">
+                <div class="color_3" id="color_3"></div>
+                <div class="color_4" id="color_4"></div>
+                
+                <div class="menu">
                     <h3 id="h3"></h3>
                     <ul>
-                        <li><a><button style="background-color: Black;" onclick="color('Black').value">
+                        <li><a><button style="background-color: rgb(240, 248, 182);"  id="gold">
+                            Gold</button></a></li>
+                        <li><a><button style="background-color: rgb(174, 174, 174);"  id="silver">
+                            Silver</button></a></li>
+                        <li><a><button style="background-color: Black;"  id="black">
                             Black</button></a></li>
-                        <li><a><button style="background-color: Brown;" onclick="color('Brown').value">
+                        <li><a><button style="background-color: Brown;"  id="brown">
                             Brown</button></a></li>
-                        <li><a><button style="background-color: Red;" onclick="color('Red').value">
-                            Red</button></a></li>
-                        <li><a><button style="background-color: Orange;" onclick="color('Orange').value">
-                            Orange</button></a></li>
-                        <li><a><button style="background-color: Yellow;" onclick="color('Yellow').value">
-                            Yellow</button></a></li>
-                        <li><a><button style="background-color: Green;" onclick="color('Green').value">
-                            Green</button></a></li>
-                        <li><a><button style="background-color: Blue;" onclick="color('Blue').value">
-                            Blue</button></a></li>
-                        <li><a><button style="background-color: Purple;" onclick="color('Purple').value">
-                            Purple</button></a></li>
-                        <li><a><button style="background-color: Gray;" onclick="color('Gray').value">
-                            Gray</button></a></li>
-                        <li><a><button style="background-color: White;" onclick="color('White').value">
-                            White</button></a></li>
-                    </ul>
-                </div> -->
-                <div class="menu">
-                    <h3 id="h3">กรุณาเลือกสีแถวที่ 2</h3>
-                    <ul>
-                        <li><a><button style="background-color: Black;" id="black">
-                            Black</button></a></li>
-                        <li><a><button style="background-color: Brown;" id="brown">
-                            Brown</button></a></li>
-                        <li><a><button style="background-color: Red;" id="red">
+                        <li><a><button style="background-color: Red;"    id="red">
                             Red</button></a></li>
                         <li><a><button style="background-color: Orange;" id="orange">
                             Orange</button></a></li>
                         <li><a><button style="background-color: Yellow;" id="yellow">
                             Yellow</button></a></li>
-                        <li><a><button style="background-color: Green;" id="green">
+                        <li><a><button style="background-color: Green;"  id="green">
                             Green</button></a></li>
-                        <li><a><button style="background-color: Blue;" id="blue">
+                        <li><a><button style="background-color: Blue;"   id="blue">
                             Blue</button></a></li>
                         <li><a><button style="background-color: Purple;" id="purple">
                             Purple</button></a></li>
-                        <li><a><button style="background-color: Gray;" id="gray">
+                        <li><a><button style="background-color: Gray;"   id="gray">
                             Gray</button></a></li>
-                        <li><a><button style="background-color: White;" id="white">
+                        <li><a><button style="background-color: White;"  id="white">
                             White</button></a></li>
                     </ul>
                 </div>
-                <!-- <div class="menu_2">
-                    <h3 id=".h3">กรุณาเลือกสีแถวที่ 3</h3>
-                    <ul>
-                        <li><a><button style="background-color: Black;" onclick="color_2('Black').value">
-                            Black</button></a></li>
-                        <li><a><button style="background-color: Brown;" onclick="color_2('Brown').value">
-                            Brown</button></a></li>
-                        <li><a><button style="background-color: Red;" onclick="color_2('Red').value">
-                            Red</button></a></li>
-                        <li><a><button style="background-color: Orange;" onclick="color_2('Orange').value">
-                            Orange</button></a></li>
-                        <li><a><button style="background-color: Yellow;" onclick="color_2('Yellow').value">
-                            Yellow</button></a></li>
-                        <li><a><button style="background-color: Green;" onclick="color_2('Green').value">
-                            Green</button></a></li>
-                        <li><a><button style="background-color: Blue;" onclick="color_2('Blue').value">
-                            Blue</button></a></li>
-                        <li><a><button style="background-color: Purple;" onclick="color_2('Purple').value">
-                            Purple</button></a></li>
-                        <li><a><button style="background-color: Gray;" onclick="color_2('Gray').value">
-                            Gray</button></a></li>
-                        <li><a><button style="background-color: White;" onclick="color_2('White').value">
-                            White</button></a></li>
-                    </ul>
-                </div> -->
-                <!-- <div class="menu_3">
-                    <h3 id=".h3"></h3>
-                    <ul>
-                        <li><a><button style="background-color: Black;" onclick="color_1('Black').value">
-                            Black</button></a></li>
-                        <li><a><button style="background-color: Brown;" onclick="color_1('Brown').value">
-                            Brown</button></a></li>
-                        <li><a><button style="background-color: Red;" onclick="color_1('Red').value">
-                            Red</button></a></li>
-                        <li><a><button style="background-color: Orange;" onclick="color_1('Orange').value">
-                            Orange</button></a></li>
-                        <li><a><button style="background-color: Yellow;" onclick="color_1('Yellow').value">
-                            Yellow</button></a></li>
-                        <li><a><button style="background-color: Green;" onclick="color_1('Green').value">
-                            Green</button></a></li>
-                        <li><a><button style="background-color: Blue;" onclick="color_1('Blue').value">
-                            Blue</button></a></li>
-                        <li><a><button style="background-color: Purple;" onclick="color_1('Purple').value">
-                            Purple</button></a></li>
-                        <li><a><button style="background-color: Gray;" onclick="color_1('Gray').value">
-                            Gray</button></a></li>
-                        <li><a><button style="background-color: White;" onclick="color_1('White').value">
-                            White</button></a></li>
-                    </ul>
-                </div> -->
             </div>
         </div>
     </div>
