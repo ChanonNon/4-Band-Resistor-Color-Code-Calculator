@@ -37,7 +37,7 @@ color_4.onclick = function(){
 }
 
 function menuToggle_1() {
-    document.getElementById('h3').innerHTML = "กรุณาเลือกสีแถวที่ 1";
+    document.getElementById('title').innerHTML = "กรุณาเลือกสีแถวที่ 1";
     const toggleMenu = document.querySelector('.menu');
     toggleMenu.classList.toggle('active')
     hideColor("none","none","block","block","block","block","block");
@@ -45,7 +45,7 @@ function menuToggle_1() {
 }
 
 function menuToggle_2() {
-    document.getElementById('h3').innerHTML = "กรุณาเลือกสีแถวที่ 2";
+    document.getElementById('title').innerHTML = "กรุณาเลือกสีแถวที่ 2";
     const toggleMenu = document.querySelector('.menu');
     toggleMenu.classList.toggle('active');
     hideColor("none","none","block","block","block","block","block");
@@ -53,7 +53,7 @@ function menuToggle_2() {
 }
 
 function menuToggle_3() {
-    document.getElementById('h3').innerHTML = "กรุณาเลือกสีแถวที่ 3";
+    document.getElementById('title').innerHTML = "กรุณาเลือกสีแถวที่ 3";
     const toggleMenu = document.querySelector('.menu');
     toggleMenu.classList.toggle('active')
     hideColor("block","block","block","block","block","none","none");
@@ -61,7 +61,7 @@ function menuToggle_3() {
 }
 
 function menuToggle_4() {
-    document.getElementById('h3').innerHTML = "กรุณาเลือกสีแถวที่ 4";
+    document.getElementById('title').innerHTML = "กรุณาเลือกสีแถวที่ 4";
     const toggleMenu = document.querySelector('.menu');
     toggleMenu.classList.toggle('active')
     hideColor("block","block","none","none","none","none","none");
@@ -196,7 +196,7 @@ function resistor(b,a){
     else if(a == "color_4"){
         tolerance_persent(b);
     }
-    result.innerHTML = ((band_1*10) + band_2) *(10**multiplier) +" Ohms " + tolerance + "%";
+    result.innerHTML = (((band_1*10) + band_2) *(10**multiplier)).toFixed(2) +" Ohms " + tolerance + "%";
 }
 
 
