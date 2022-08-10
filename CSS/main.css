@@ -2,11 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(2,138,229);
 }
 
 .main {
@@ -14,23 +15,15 @@ body{
     margin: 2rem auto;
     height:580px;
     box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.2);
-    border-radius: 30px;
-    background-color: rgb(255, 255, 255);
+    border-radius: 0px;
+    background-color: rgb(29,32,38);
     position: relative; /* อ้างอิงถึงกัน */ 
 }
 
 .main h2{
     padding: 15px;
     text-align: center;
-}
-
-.img {
-    height: 220px;
-    margin: 0px 20px 20px 20px;
-    background-color: aqua;
-    overflow: hidden;
-    border-radius: 30px;
-    position: relative;
+    color: #fff;
 }
 
 .body_1{
@@ -72,7 +65,7 @@ body{
 .triangle_1{
     width: 0px;
     height: 0px;
-    margin: 33px 0px 0px 154px;
+    margin: 33px 0px 0px 153px;
     border-top: 77px solid transparent;
     border-right: 128px solid rgb(160, 160, 160);
     border-bottom: 76px solid transparent;
@@ -153,11 +146,23 @@ body{
     position: absolute;
 }
 
+.img {
+    height: 220px;
+    margin: 0px 20px 20px 20px;
+    background-color: rgb(34,38,46);
+    overflow: hidden;
+    border-radius: 30px;
+    position: relative;
+}
+
 .result{
+    display: flex;
     height: 60px;
     margin: -10px 20px 0px 20px;
     border-radius: 15px;
-    background-color: rgb(20, 190, 145);
+    background-color: rgb(3,106,203);
+    align-items: center;
+    padding-left: 90px;
 }
 
 .box{
@@ -165,7 +170,7 @@ body{
     padding: 20px;
     height: 110px;
     border-radius: 15px;
-    background-color: blueviolet;
+    background-color: rgb(16,112,112);
 }
 
 .action{
@@ -174,10 +179,10 @@ body{
 
 .action .color_1{
     position: absolute;
-    margin: 0px 20px 0px 20px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+    margin: 0px 20px 0px 15px;
+    width: 100px;
+    height: 70px;
+    border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
     background-color: rgb(255, 255, 255);
@@ -186,9 +191,9 @@ body{
 .action .color_2{
     position: absolute;
     margin-left: 150px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+    width: 100px;
+    height: 70px;
+    border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
     background-color: rgb(255, 255, 255);
@@ -196,10 +201,10 @@ body{
 
 .action .color_3{
     position: absolute;
-    margin-left: 300px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+    margin-left: 280px;
+    width: 100px;
+    height: 70px;
+    border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
     background-color: rgb(255, 255, 255);
@@ -207,10 +212,10 @@ body{
 
 .action .color_4{
     position: absolute;
-    margin-left: 440px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+    margin-left: 410px;
+    width: 100px;
+    height: 70px;
+    border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
     background-color: rgb(255, 255, 255);
