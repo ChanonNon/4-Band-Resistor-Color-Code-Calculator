@@ -31,46 +31,116 @@
 
 .body_1{
     width: 423px;
-height: 112px;
-left: 289px;
-top: 276px;
+    height: 112px;
+    margin: 54px 0px 0px 70px;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    border-radius: 61px;
+    position: absolute;
+}
 
-background: rgba(0, 0, 0, 0.3);
-border-radius: 61px;
+.square_1{
+    width: 48px;
+    height: 154px;
+    margin: 33px 0px 0px 106px;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    position: absolute;
+}
+
+.square_2{
+    width: 48px;
+    height: 154px;
+    margin: 33px 0px 0px 409px;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    position: absolute;
+}
+
+.triangle_1{
+    width: 0px;
+    height: 0px;
+    margin: 33px 0px 0px 154px;
+    border-top: 77px solid transparent;
+    border-right: 128px solid rgb(0, 0, 0);
+    border-bottom: 76px solid transparent;
+    overflow: hidden;
+    position: absolute;
+    transform: rotate(180deg);
+}
+
+.triangle_2{
+    width: 0px;
+    height: 0px;
+    margin: 33px 0px 0px 281px;
+    border-top: 77px solid transparent;
+    border-right: 128px solid rgb(0, 0, 0);
+    border-bottom: 76px solid transparent;
+    overflow: hidden;
+    position: absolute;
+    transform: rotate(0deg);
+}
+
+.circle_1{
+    width: 77px;
+    height: 154px;
+    margin:33px 0px 0px 70px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.circle_2{
+    width: 77px;
+    height: 154px;
+    margin:33px 0px 0px 417px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
 }
 
 .line_1{
-    width: 25px;
-    height: 100px;
+    width: 21px;
+    height: 156px;
     background-color: #1b9fcb;
-    margin-left: 3rem;
-    margin-top: 40px;
+    margin-left: 117px;
+    margin-top: 32px;
+    overflow: hidden;
+    position: absolute;
 }
 
-/* .line_2{
-    width: 25px;
-    height: 100px;
+.line_2{
+    width: 21px;
+    height: 114px;
     background-color: #1b9fcb;
-    margin-left: 3rem;
-    margin-top: 40px;
+    margin-left: 202px;
+    margin-top: 53px;
+    overflow: hidden;
+    position: absolute;
 }
 
 .line_3{
-    width: 25px;
-    height: 100px;
+    width: 21px;
+    height: 114px;
     background-color: #1b9fcb;
-    margin-left: 3rem;
-    margin-top: 40px;
+    margin-left: 270px;
+    margin-top: 53px;
+    overflow: hidden;
+    position: absolute;
 }
 
 .line_4{
-    width: 25px;
-    height: 100px;
+    width: 21px;
+    height: 156px;
     background-color: #1b9fcb;
-    margin-left: 3rem;
-    margin-top: 40px;
+    margin-left: 425px;
+    margin-top: 32px;
+    overflow: hidden;
+    position: absolute;
 }
-*/
+
 .line div{
     position:absolute;
     display: inline-block;
@@ -89,8 +159,30 @@ border-radius: 61px;
     position: fixed;
 }
 
-.action .color{
-    position: relative;
+.action .color_1{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+}
+
+.action .color_2{
+    position: absolute;
+    margin-left: 150px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+}
+
+.action .color_3{
+    position: absolute;
+    margin-left: 300px;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -148,6 +240,108 @@ border-radius: 61px;
 .action .menu ul li:hover a{
     color: #fff;
 }
+
+
+/* .action .menu_1{
+    position: absolute;
+    top: 120px;
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    width: 500px;
+    box-sizing: 0 5px 25px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.action .menu_1.active{
+    top: 80px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.action .menu_1::before{
+    content: '';
+    position:absolute;
+    top: -10px;
+    right: 40px;
+    width: 20px;
+    height: 20px;
+    background-color: dodgerblue;
+    transform: rotate(45deg);
+}
+
+.action .menu_1 ul li{
+    list-style: none;
+    padding: 5px 0;
+    border-top: 1px solid rgba(0,0,0,0.05);
+    display:inline-block;
+    align-items: center;
+}
+
+.action .menu_1 ul li a{
+    display:inline-block;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.action .menu_1 ul li:hover a{
+    color: #fff;
+}
+
+
+.action .menu_2{
+    position: absolute;
+    top: 120px;
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    width: 500px;
+    box-sizing: 0 5px 25px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.action .menu_2.active{
+    top: 80px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.action .menu_2::before{
+    content: '';
+    position:absolute;
+    top: -10px;
+    right: 40px;
+    width: 20px;
+    height: 20px;
+    background-color: dodgerblue;
+    transform: rotate(45deg);
+}
+
+.action .menu_2 ul li{
+    list-style: none;
+    padding: 5px 0;
+    border-top: 1px solid rgba(0,0,0,0.05);
+    display:inline-block;
+    align-items: center;
+}
+
+.action .menu_2 ul li a{
+    display:inline-block;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.action .menu_2 ul li:hover a{
+    color: #fff;
+} */
 
 button{
     width: 50px;
