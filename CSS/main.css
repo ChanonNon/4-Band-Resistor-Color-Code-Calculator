@@ -3,19 +3,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Oleo Script Swash Caps', cursive;
-    /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 body{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(5,103,183,1) 71%, rgba(0,212,255,1) 100%);
+    background-color: rgba(0,162,225,255);
 }
 
 .main {
     width: 600px;
     margin: 2rem auto;
     height:580px;
-    box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.2);
+    /* box-shadow: 3px 3px 10px rgb(0, 0, 0, 0); */
     border-radius: 0px;
     background-color: rgb(29,32,38);
     position: relative; /* อ้างอิงถึงกัน */ 
@@ -24,7 +22,7 @@ body{
 .main h2{
     padding: 15px;
     text-align: center;
-    color: #fff;
+    color: #04a3e3;
 }
 
 .body_1{
@@ -115,6 +113,7 @@ body{
     margin-top: 32px;
     overflow: hidden;
     position: absolute;
+    transition: 0.4s;
 }
 
 .line_2{
@@ -125,6 +124,7 @@ body{
     margin-top: 53px;
     overflow: hidden;
     position: absolute;
+    transition: 0.4s;
 }
 
 .line_3{
@@ -135,6 +135,7 @@ body{
     margin-top: 53px;
     overflow: hidden;
     position: absolute;
+    transition: 0.4s;
 }
 
 .line_4{
@@ -145,32 +146,36 @@ body{
     margin-top: 32px;
     overflow: hidden;
     position: absolute;
+    transition: 0.4s;
 }
 
 .img {
+    width: 100%;
     height: 220px;
-    margin: 0px 20px 20px 20px;
-    background-color: rgb(34,38,46);
+    margin: 0px 20px 0px 0px;
+    background-color: #071115;
     overflow: hidden;
-    border-radius: 30px;
+    border-radius: 0px;
     position: relative;
 }
 
 .result{
+    width: 100%;
     display: flex;
     height: 60px;
-    margin: -10px 20px 0px 20px;
-    border-radius: 15px;
+    margin: 11px 20px 0px 0px;
+    border-radius: 0px;
     background-color: rgb(3,106,203);
     align-items: center;
     padding-left: 90px;
 }
 
 .box{
-    margin: 10px 20px 0px 20px;
-    padding: 20px;
-    height: 110px;
-    border-radius: 15px;
+    width: 100%;
+    margin: 10px 20px 0px 0px;
+    padding: 35px;
+    height: 240px;
+    border-radius: 0px 0px 20px 20px;
     background-color: rgb(16,112,112);
 }
 
@@ -180,7 +185,7 @@ body{
 
 .action .color_1{
     position: absolute;
-    margin: 0px 20px 0px 15px;
+    margin: -10px 0px 0px 15px;
     width: 100px;
     height: 70px;
     border-radius: 10px;
@@ -191,6 +196,7 @@ body{
 
 .action .color_2{
     position: absolute;
+    margin: -10px 0px 0px 15px;
     margin-left: 150px;
     width: 100px;
     height: 70px;
@@ -202,6 +208,7 @@ body{
 
 .action .color_3{
     position: absolute;
+    margin: -10px 0px 0px 15px;
     margin-left: 280px;
     width: 100px;
     height: 70px;
@@ -213,6 +220,7 @@ body{
 
 .action .color_4{
     position: absolute;
+    margin: -10px 20px 0px 15px;
     margin-left: 410px;
     width: 100px;
     height: 70px;
