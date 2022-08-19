@@ -6,23 +6,23 @@
 }
 
 body{
-    background-color: rgba(0,162,225,255);
+    background-color: #3C0F6E;
 }
 
 .main {
     width: 600px;
     margin: 2rem auto;
     height:580px;
-    /* box-shadow: 3px 3px 10px rgb(0, 0, 0, 0); */
-    border-radius: 0px;
-    background-color: rgb(29,32,38);
-    position: relative; /* อ้างอิงถึงกัน */ 
+    box-shadow: 3px 3px 500px rgb(43, 21, 76);
+    border-radius: 20px;
+    background-color: #150536;
+    position: relative;
 }
 
 .main h2{
     padding: 15px;
     text-align: center;
-    color: #04a3e3;
+    color: #a25bf8;
 }
 
 .body_1{
@@ -40,7 +40,7 @@ body{
     width: 931px;
     height: 9px;
     margin: 105px 0px 0px 0px;
-    background-color: rgb(160, 160, 160);
+    background-color: #3C0F6E;
 }
 
 .square_1{
@@ -165,7 +165,10 @@ body{
     height: 60px;
     margin: 11px 20px 0px 0px;
     border-radius: 0px;
-    background-color: rgb(3,106,203);
+    font-size: 22px;
+    color: #a25bf8;
+    font-weight:bold;
+    background-color: #150536;
     align-items: center;
     padding-left: 90px;
 }
@@ -176,65 +179,79 @@ body{
     padding: 35px;
     height: 240px;
     border-radius: 0px 0px 20px 20px;
-    background-color: rgb(16,112,112);
+    background-color: rgb(140, 62, 229);
 }
 
 .action{
     position: fixed;
+    color: rgb(0, 0, 0);
+    font-weight:bold;
 }
 
 .action .color_1{
     position: absolute;
-    margin: -10px 0px 0px 15px;
+    margin: -10px 0px 0px 0px;
+    padding: 23px;
     width: 100px;
     height: 70px;
     border-radius: 10px;
+    text-align: center;
     overflow: hidden;
     cursor: pointer;
     background-color: rgb(255, 255, 255);
+    transition: 0.5s;
 }
 
 .action .color_2{
     position: absolute;
     margin: -10px 0px 0px 15px;
-    margin-left: 150px;
-    width: 100px;
+    margin-left: 136px;
+    padding: 23px;
+    width: 103px;
     height: 70px;
     border-radius: 10px;
+    text-align: center;
     overflow: hidden;
     cursor: pointer;
     background-color: rgb(255, 255, 255);
+    transition: 0.5s;
 }
 
 .action .color_3{
     position: absolute;
     margin: -10px 0px 0px 15px;
-    margin-left: 280px;
-    width: 100px;
+    margin-left: 265px;
+    padding: 25px;
+    width: 122px;
     height: 70px;
     border-radius: 10px;
+    text-align: center;
     overflow: hidden;
     cursor: pointer;
     background-color: rgb(255, 255, 255);
+    transition: 0.5s;
 }
 
 .action .color_4{
     position: absolute;
     margin: -10px 20px 0px 15px;
     margin-left: 410px;
-    width: 100px;
+    padding: 25px;
+    width: 125px;
     height: 70px;
     border-radius: 10px;
+    text-align: center;
     overflow: hidden;
     cursor: pointer;
     background-color: rgb(255, 255, 255);
+    transition: 0.5s;
 }
 
 .action .menu{
     position: absolute;
     top: 120px;
     padding: 10px 20px;
-    background-color: dodgerblue;
+    background-color: #b744e1;
     width: 500px;
     box-sizing: 0 5px 25px rgba(0,0,0,0.1);
     border-radius: 15px;
@@ -249,16 +266,16 @@ body{
     opacity: 1;
 }
 
-.action .menu::before{
+/* .action .menu::before{
     content: '';
     position:absolute;
     top: -10px;
-    right: 40px;
+    right: 450px;
     width: 20px;
     height: 20px;
     background-color: dodgerblue;
     transform: rotate(45deg);
-}
+} */
 
 .action .menu ul li{
     list-style: none;
