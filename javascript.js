@@ -24,6 +24,7 @@ var tolerance = 0;
 var result = document.getElementById("result_resistor");
 
 color_1.onclick = function(){
+    
     menuToggle_1();
 }
 color_2.onclick = function(){
@@ -37,7 +38,7 @@ color_4.onclick = function(){
 }
 
 function menuToggle_1() {
-    document.getElementById('title').innerHTML = "กรุณาเลือกสีแถวที่ 1";
+    document.getElementById('title').innerHTML = "กรุณาเลือกสีแถบที่ 1";
     const toggleMenu = document.querySelector('.menu');
     toggleMenu.classList.toggle('active')
     hideColor("none","none","block","block","block","block","block");
@@ -45,7 +46,7 @@ function menuToggle_1() {
 }
 
 function menuToggle_2() {
-    document.getElementById('title').innerHTML = "กรุณาเลือกสีแถวที่ 2";
+    document.getElementById('title').innerHTML = "กรุณาเลือกสีแถบที่ 2";
     const toggleMenu = document.querySelector('.menu');
     toggleMenu.classList.toggle('active');
     hideColor("none","none","block","block","block","block","block");
@@ -53,7 +54,7 @@ function menuToggle_2() {
 }
 
 function menuToggle_3() {
-    document.getElementById('title').innerHTML = "กรุณาเลือกสีแถวที่ 3";
+    document.getElementById('title').innerHTML = "กรุณาเลือกสี ตัวคูณ แถบที่ 3";
     const toggleMenu = document.querySelector('.menu');
     toggleMenu.classList.toggle('active')
     hideColor("block","block","block","block","block","none","none");
@@ -61,7 +62,7 @@ function menuToggle_3() {
 }
 
 function menuToggle_4() {
-    document.getElementById('title').innerHTML = "กรุณาเลือกสีแถวที่ 4";
+    document.getElementById('title').innerHTML = "กรุณาเลือกสี ความเผื่อ แถบที่ 4";
     const toggleMenu = document.querySelector('.menu');
     toggleMenu.classList.toggle('active')
     hideColor("block","block","none","none","none","none","none");
@@ -119,8 +120,8 @@ function color(color,line){
     }
     blue.onclick = function(){
         console.log("blue",line)
-        document.getElementById(color).style.background = "blue";
-        document.getElementById(line).style.background = "blue";
+        document.getElementById(color).style.background = "rgb(0, 115, 255)";
+        document.getElementById(line).style.background = "rgb(0, 115, 255)";
         resistor(6,color);
     }
     purple.onclick = function(){
