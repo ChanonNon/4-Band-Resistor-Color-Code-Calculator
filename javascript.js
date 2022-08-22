@@ -62,7 +62,7 @@ function menuToggle_3() {
 }
 
 function menuToggle_4() {
-    document.getElementById('title').innerHTML = "กรุณาเลือกสี ความเผื่อ แถบที่ 4";
+    document.getElementById('title').innerHTML = "กรุณาเลือกสี เปอร์เซ็นต์ความคลาดเคลื่อน แถบที่ 4";
     const toggleMenu = document.querySelector('.menu');
     toggleMenu.classList.toggle('active')
     hideColor("block","block","none","none","none","none","none");
