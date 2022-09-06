@@ -24,7 +24,6 @@ var tolerance = 0;
 var result = document.getElementById("result_resistor");
 
 color_1.onclick = function(){
-    
     menuToggle_1();
 }
 color_2.onclick = function(){
